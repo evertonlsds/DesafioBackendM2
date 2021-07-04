@@ -1,10 +1,11 @@
 const express = require('express');
+const produtos = require('./controladores/produtos')
 
 
 const roteador = express();
 
 //produto
-roteador.get('/produtos', ()=>{});
+roteador.get('/produtos', produtos.listarProdrutos);
 
 //carrinho
 
